@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(77, 74, 74);
+    background-image: url(../images/logo/2.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.content {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container {
+    height: 300px;
+    width: 400px;
+    border: 2px solid white;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    letter-spacing: 1px;
+    backdrop-filter: blur(2px);
+}
+
+.container h1 {
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.container h2 {
+    font-size: small;
+    margin-top: 2rem;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.container:hover {
+    height: 320px;
+    width: 430px;
+    border: 2px solid white;
+    background: transparent;
+    margin-left: 4rem;
+    margin-top: 8rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    letter-spacing: 1px;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.container h1:hover {
+    color: black;
+    cursor: default;
+}
+
+.container h2:hover {
+    color: black;
+    cursor: default;
+}
+
+.container a:hover {
+    color: black;
+    font-size: larger;
+    text-decoration: underline;
+}
+

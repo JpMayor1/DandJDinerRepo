@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="/css/form.css" />
+    </head>
+    <body>
+        <div class="form">
+            <h1 class="heading">login</h1>
+            <ul>
+                <% if(messages.succes_msg) { %>
+                <li><%= messages.succes_msg %></li>
+                <% } %>
+            </ul>
+
+            <ul>
+                <% if(messages.error ){ %>
+                <li><%= messages.error %></li>
+                <% } %>
+            </ul>
+
+            <form action="/users/login" method="POST">
+                <div>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        class="email"
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password"
+                        class="password"
+                        required
+                    />
+                </div>
+                <div>
+                    <input type="submit" value="Login" class="submit-btn" />
+                </div>
+                <a href="register" class="link">Don't have an Account? Register here</a>
+            </form>
+        </div>
+    </body>
+</html>
