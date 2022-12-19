@@ -13,6 +13,8 @@ initializePassport(passport);
 
 const PORT = process.env.PORT || 4000;
 
+//////////////////////////// LOG IN AND REGISTER
+
 app.use(express.static(path.join(__dirname, "./public")));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
@@ -151,6 +153,9 @@ function checkNotAuthenticated(req, res, next) {
     }
     res.redirect("/users/login");
 }
+
+
+////////////////////////////////// RESERVATION
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
