@@ -1,3 +1,21 @@
+:root {
+    --black: #000000;
+    --blue: #282a3a;
+    --darkbrown: #735f32;
+    --lightbrown: #c69749;
+    --white: #faf8f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -11,12 +29,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /****************************HEADER SECTION********************************/
 
 header {
-    height: 40px;
+    height: 95px;
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +44,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(102, 66, 1);
+    background: var(--lightbrown);
     padding: 2rem 9%;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +59,7 @@ header .navbar a,
 .logout {
     font-size: 23px;
     margin-left: 2rem;
-    color: white;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -48,13 +67,13 @@ header .navbar p {
     display: inline;
     font-size: 23px;
     margin-left: 2rem;
-    color: white;
+    color: var(--black);
     text-decoration: none;
     cursor: pointer;
 }
 
 header .navbar a:hover {
-    color: orange;
+    color: var(--blue);
 }
 
 header button {
@@ -68,7 +87,7 @@ header button {
 }
 
 #menu-bar {
-    font-size: 3rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: black;
     border: 0.1rem solid black;
@@ -77,90 +96,16 @@ header button {
     display: none;
 }
 
-@media (max-width: 900px) {
-    html {
-        font-size: 55%;
-    }
-
-    header {
-        padding: 2rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-}
-
-header .logo {
-    height: 70px;
-    border: 1px;
-    border-radius: 50%;
-}
-
-@media (max-width: 700px) {
-    #menu-bar {
-        display: initial;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #f7f7f7;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    header .navbar a {
-        margin: 1.5rem;
-        padding: 1.5rem;
-        display: block;
-        border: 0.2rem solid rgba(0, 0, 0, 0.1);
-        border-left: 0.5rem solid orange;
-        background: hsl(0% 0% 100% /0.1);
-        color: black;
-    }
-
-    header .logo {
-        height: 65px;
-        border: 1px;
-        border-radius: 50%;
-    }
-}
-
-@media (max-width: 400px) {
-    html {
-        font-size: 50%;
-    }
-
-    header .logo {
-        height: 65px;
-        border: 1px;
-        border-radius: 50%;
-    }
-}
 /****************************MAIN PAGE********************************/
 
 .main-page {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 100vh;
     width: 100%;
-    margin-top: 100px;
 }
 
 /****************************HOME SECTION********************************/
 
 .home {
-    position: absolute;
     height: 100%;
     width: 90%;
     display: flex;
@@ -170,25 +115,29 @@ header .logo {
     justify-content: center;
 }
 
-.home .content {
+.home .home-content {
+    margin-top: 5rem;
     text-align: center;
     flex: 1 1 10rem;
     padding: 3rem;
 }
 
-.home .content h3 {
+.home .home-content h3 {
     color: white;
     font-size: 50px;
     font-weight: 500px;
+    cursor: default;
 }
 
-.home .content p {
+.home .home-content p {
     color: white;
     font-size: 20px;
     font-weight: 700px;
+    cursor: default;
 }
 
 .home .image {
+    margin-top: 5rem;
     text-align: center;
     flex: 1 1 10rem;
 }
@@ -214,840 +163,189 @@ header .logo {
 
 /****************************FOOD SECTION********************************/
 
-.food {
-    position: absolute;
-    top: 600px;
-    padding-top: 50px;
+.menu {
+    padding: 8rem 9%;
+    padding-bottom: 1rem;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.menu .home-slider .slide {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem; 
+}
+
+.menu .home-slider .slide .content {
+    margin-top: 3rem;
+    flex: 1 1 45rem;
+}
+
+.menu .home-slider .slide .image {
+    flex: 1 1 45rem;
+}
+
+.menu .home-slider .slide .image2 {
+    flex: 1 1 45rem;
+}
+
+.menu .home-slider .slide .image2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.menu .home-slider .slide .image img {
     height: 90%;
     width: 90%;
 }
 
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-}
-
-.heading span {
-    color: white;
+.menu .home-slider .slide .content span {
+    color: var(--white);
     font-size: 3rem;
+    cursor: default;
 }
 
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
+.menu .home-slider .slide .content h3 {
+    color: var(--blue);
+    font-size: 3.5rem;
+    cursor: default;
 }
 
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
+.menu .home-slider .slide .content p {
+    color: var(--white);
+    font-size: 1rem;
+    cursor: default;
 }
 
-.food .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
 }
 
-.food .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
+.btn:hover{
+    background: var(--white);
+    color: var(--blue);
+}
+
+/****************************CHICKEN WINGS SECTION********************************/
+
+.sub-heading{
+    text-align: center;
+    color: var(--white);
+    font-size: 3rem;
+    padding-top: 1rem;
+    cursor: default;
+}
+
+.heading{
+    text-align: center;
+    color: var(--blue);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1rem;
+}
+
+.dishes .box-container .box {
+    padding: 2rem;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: .5rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.food .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.food .box-container .box .content {
     text-align: center;
-    background: #fff;
-    padding: 1rem;
 }
 
-.food .box-container .box .content img {
-    margin: 1rem;
+.box img{
+    height: 50%;
+    width: 50%;
 }
 
-.food .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.food .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.food .box-container .box:hover .image {
-    top: 0%;
-}
-
-.food .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************RICE SECTION********************************/
-
-.food2 {
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
     position: absolute;
-    top: 2500px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
+    top: 1.5rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
     font-size: 2rem;
-    padding: 1rem;
-    color: white;
+    color: var(--blue);
 }
 
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+    color: var(--lightbrown);
 }
 
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
+.dishes .box-container .box .fa-heart{
+    right: -15rem;
 }
 
-.food2 .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+.dishes .box-container .box .fa-eye{
+    left: -15rem;
 }
 
-.food2 .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
+.dishes .box-container .box:hover .fa-heart{
+    right: 1.5rem;
 }
 
-.food2 .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
+.dishes .box-container .box:hover .fa-eye{
+    left: 1.5rem;
 }
 
-.food2 .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.food2 .box-container .box .content img {
-    margin: 1rem;
-}
-
-.food2 .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.food2 .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.food2 .box-container .box:hover .image {
-    top: 0%;
-}
-
-.food2 .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************CHICKEN WINGS********************************/
-
-.food3 {
-    position: absolute;
-    top: 3300px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
+.dishes .box-container .box h3{
+    color: var(--blue);
     font-size: 2rem;
-    padding: 1rem;
-    color: white;
+    cursor: default;
 }
 
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
+.dishes .box-container .box .stars{
+    padding: .5rem 0;
 }
 
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.food3 .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.food3 .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.food3 .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.food3 .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.food3 .box-container .box .content img {
-    margin: 1rem;
-}
-
-.food3 .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.food3 .box-container .box .content .chicken {
-    font-size: 2.4rem;
-    color: #333;
-}
-
-.food3 .box-container .box .content p {
+.dishes .box-container .box .stars i {
     font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.food3 .box-container .box:hover .image {
-    top: 0%;
-}
-
-.food3 .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************PLATTERS********************************/
-
-.food4 {
-    position: absolute;
-    top: 4100px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-}
-
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.food4 .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.food4 .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.food4 .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.food4 .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.food4 .box-container .box .content img {
-    margin: 1rem;
-}
-
-.food4 .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.food4 .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.food4 .box-container .box:hover .image {
-    top: 0%;
-}
-
-.food4 .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************NOODLES & PASTA********************************/
-
-.food5 {
-    position: absolute;
-    top: 5250px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-}
-
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.food5 .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.food5 .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.food5 .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.food5 .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.food5 .box-container .box .content img {
-    margin: 1rem;
-}
-
-.food5 .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.food5 .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.food5 .box-container .box:hover .image {
-    top: 0%;
-}
-
-.food5 .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************SNACKS********************************/
-
-.food6 {
-    position: absolute;
-    top: 6100px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-}
-
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.food6 .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.food6 .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.food6 .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.food6 .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.food6 .box-container .box .content img {
-    margin: 1rem;
-}
-
-.food6 .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.food6 .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.food6 .box-container .box:hover .image {
-    top: 0%;
-}
-
-.food6 .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************DRINKS********************************/
-
-.drinks {
-    position: absolute;
-    top: 7550px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-}
-
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.drinks .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.drinks .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.drinks .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.drinks .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.drinks .box-container .box .content img {
-    margin: 1rem;
-}
-
-.drinks .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.drinks .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.drinks .box-container .box:hover .image {
-    top: 0%;
-}
-
-.drinks .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************MILKTEA********************************/
-
-.drinks2 {
-    position: absolute;
-    top: 8800px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-}
-
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.drinks2 .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.drinks2 .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.drinks2 .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.drinks2 .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.drinks2 .box-container .box .content img {
-    margin: 1rem;
-}
-
-.drinks2 .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.drinks2 .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.drinks2 .box-container .box:hover .image {
-    top: 0%;
-}
-
-.drinks2 .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
-}
-
-/****************************FRAPPE********************************/
-
-.drinks3 {
-    position: absolute;
-    top: 10600px;
-    padding-top: 50px;
-    height: 90%;
-    width: 90%;
-}
-
-.heading {
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-}
-
-.image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-}
-
-.drinks3 .box-container {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.drinks3 .box-container .box {
-    height: 57%;
-    flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    border-radius: 0.5rem;
-}
-
-.drinks3 .box-container .box .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.drinks3 .box-container .box .content {
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-}
-
-.drinks3 .box-container .box .content img {
-    margin: 1rem;
-}
-
-.drinks3 .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.drinks3 .box-container .box .content p {
-    font-size: 1rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.drinks3 .box-container .box:hover .image {
-    top: 0%;
-}
-
-.drinks3 .box-container .box:hover .content {
-    transform: translateY(-100%);
-    transition: all ease-in-out 0.5s;
+    color: var(--white);
+}
+
+.dishes .box-container .box span{
+    color: var(--white);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    cursor: default;
 }
 
 /****************************FOOTER********************************/
 
 footer {
-    position: absolute;
-    top: 12200px;
+    margin-top: 1rem;
     height: 50px;
     width: 100vw;
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(5px);
+    /* background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(5px); */
+    background: var(--white);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 footer i {
     font-size: 40px;
+    margin: 1rem;
 }
 
 .fa-facebook {
@@ -1059,15 +357,66 @@ footer i {
 }
 
 .footer2 {
-    position: absolute;
-    top: 12250px;
     height: 50px;
     width: 100vw;
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(5px);
+    /* background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(5px); */
+    background: var(--white);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
+    color: black;
     cursor: default;
+}
+
+/****************************MEDIA QUERIES********************************/
+
+@media (max-width: 1000px) {
+    #menu-bar {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: 0.2rem solid rgba(0, 0, 0, 0.1);
+        border-left: 0.5rem solid var(--blue);
+        background: hsl(0% 0% 100% /0.1);
+        color: black;
+    }
+
+    header .logo {
+        height: 65px;
+        border: 1px;
+        border-radius: 50%;
+    }
+
+    .dishes .box-container .box img{
+        height: auto;
+        width: 100%;
+        padding: 1.4rem;
+    }
+
+    .menu .home-slider .slide .image img,
+    .menu .home-slider .slide .image2 img{
+        height: auto;
+        width: 100%;
+        /* adjust later */
+    }
+
 }

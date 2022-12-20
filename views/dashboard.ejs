@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&J Diner</title>
-
-    <!--------------------- link to css ---------------------->
+    <!--------------------- font awsome cdn link ---------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <!--------------------- SWIPER LINK ---------------------->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <!--------------------- link to css ---------------------->
     <link rel="stylesheet" href="/css/main.css">
     
 </head>
@@ -26,8 +31,8 @@
     
             <nav class="navbar">
             <a href="#home">HOME</a> 
-            <a href="#food">MENU</a> 
-            <a href="#socials">SOCIALS</a>
+            <a href="#menu">MENU</a> 
+            <a href="#socials">FOLLOW US</a>
             <a href="reservation">RESERVATION</a>
             </nav>
 
@@ -39,7 +44,7 @@
         <section class="main-page">
             
             <section class="home" id="home">
-                <div class="content">
+                <div class="home-content">
                     <h3>Food made with love by D&J diner</h3>
                     <p>
                         “Food is one part of the experience. And it has to be somewhere
@@ -55,654 +60,179 @@
                 </div>
             </section>
 <!-----------------------------------FOOD SECTION--------------------------------->
-            <section data-aos="fade-down" class="food" id="food">
-                <h1 class="heading"> <span>MENU</span></h1>
-<!-----------------------------------SILOG MEALS--------------------------------->
-                <h2 class="heading" id="silog-meals" ><u>SILOG MEALS</u></h2>
-                <div class="box-container">
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/HOTSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>HOTSILOG</h3>
-                        <p>
-                            99 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/LONGSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>LONGSILOG</h3>
-                        <p>
-                            109 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/HAMSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>HAMSILOG</h3>
-                        <p>
-                            109 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/TOSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>TOSILOG</h3>
-                        <p>
-                            109 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/SPAMSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>SPAMSILOG</h3>
-                        <p>
-                            109 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/CHICKSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>CHICKSILOG</h3>
-                        <p>
-                            119 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/BANGSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>BANGSILOG</h3>
-                        <p>
-                            119 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/PORKSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>PORKSILOG</h3>
-                        <p>
-                            129 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/TAPSILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>TAPSILOG</h3>
-                        <p>
-                            159 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/SilogMeals/SISILOG.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>SISILOG</h3>
-                        <p>
-                            159 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    </div>                    
-            </section>
+            
+    <section class="menu" id="menu">
+        <div class="swiper-container home-slider">
 
-<!-----------------------------------RICE--------------------------------->
+            <div class="swiper-wrapper wrapper">
+<!-----------------------------------CORNDOG SECTION--------------------------------->
+                <div class="swiper-slide slide">
 
-            <section data-aos="fade-down" class="food2" id="food">
-                <h2 class="heading" id="rice" ><u>RICE</u></h2>
-                <div class="box-container">
-                    <div class="box">
-                        <img class="image" src="../images/Rice/RICE.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>PLAIN RICE</h3>
-                        <p>
-                            15 Pesos
-                        </p>
-                        </div>
+                    <div class="image">
+                        <img src="../images/Snacks/unniecorndog.jpg" alt="">
                     </div>
-                    <div class="box">
-                        <img class="image" src="../images/Rice/GARLIC RICE.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>GARLIC RICE</h3>
-                        <p>
-                            20 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/Rice/PLAIN RICE PLATTER.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>PLAIN RICE PLATTER</h3>
-                        <p>
-                            70 Pesos
-                        </p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img class="image" src="../images/Rice/GARLIC RICE PLATTER.jpg" alt="" />
-                        <div class="content">
-                        <img class="logo" src="../images/logo/1.jpg" alt="" />
-                        <h3>GARLIC RICE PLATTER</h3>
-                        <p>
-                            95 Pesos
-                        </p>
-                        </div>
+
+                    <div class="content">
+
+                        <span>Special dish</span>
+                        <h3>Unnie Corndog</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
+                        <a href="#" class="btn">order now</a>
                     </div>
                     
-            </section>
-<!-----------------------------------CHICKEN WINGS--------------------------------->
-<section data-aos="fade-down" class="food3" id="food">
-    <h2 class="heading" id="chicken-wings" ><u>CHICKEN WINGS</u></h2>
-    <div class="box-container">
-        <div class="box">
-            <img class="image" src="../images/Chicken-Wings/BUFFALO WINGS.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>BUFFALO WINGS</h3>
-            <p>
-                189 Pesos
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Chicken-Wings/HONEY GLAZED CHICKEN WINGS.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3 class="chicken">HONEY GLAZED CHICKEN</h3>
-            <p>
-                179 Pesos
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Chicken-Wings/SPICY GARLIC BUFFALO CHICKEN.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>SPICY GARLIC BUFFALO CHICKEN</h3>
-            <p>
-                189 Pesos
-            </p>
-            </div>
-        </div>
-        
-</section>
-<!-----------------------------------PLATTERS--------------------------------->
+                </div>
 
-<section data-aos="fade-down" class="food4" id="food">
-    <h2 class="heading" id="platters" ><u>PLATTERS</u></h2>
-    <div class="box-container">
-        <div class="box">
-            <img class="image" src="../images/Platters/LUMPIANG SHANGHAI.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>LUMPIANG SHANGHAI</h3>
-            <p>
-                80 Pesos
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Platters/SWEET & SOUR.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>SWEET & SOUR</h3>
-            <p>
-                189 Pesos
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Platters/CHAPSUEY.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>CHAPSUEY</h3>
-            <p>
-                220 Pesos
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Platters/SISIG.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>SISIG</h3>
-            <p>
-                220 Pesos
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Platters/SINIGANG.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>SINIGANG NA BABOY</h3>
-            <p>
-                250 Pesos
-            </p>
-            </div>
-        </div>
-        
-    </section>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="../images/Snacks/laspatatas.jpg" alt="">
+                    </div>
+                    <div class="content">
 
-<!-----------------------------------NOODLES & PASTA--------------------------------->
+                        <span>Special dish</span>
+                        <h3>Las Patatas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
 
-<section data-aos="fade-down" class="food5" id="food">
-    <h2 class="heading" id="noodles" ><u>NOODLES & PASTA</u></h2>
-    <div class="box-container">
-        <div class="box">
-            <img class="image" src="../images/Noodles&Pasta/SPAGHETTI1.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>SPAGHETTI</h3>
-            <p>
-                SOLO - 55 Pesos,
-                COMBO - 159,
-                W/LUMPIA - 89 Pesos,
-                W/CHICKEN - 119,
-            </p>
+                </div>
+                <div class="swiper-slide slide">
+
+                    <div class="image2">
+                        <img src="../images/Snacks/quezzoclassic.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+
+                        <span>Special dish</span>
+                        <h3>Las Patatas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    
+
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="../images/Snacks/mozzaclassic.jpg" alt="">
+                    </div>
+                    <div class="content">
+
+                        <span>Special dish</span>
+                        <h3>Las Patatas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    
+
+                </div>
+<!-----------------------------------MILKTEA SECTION--------------------------------->
+
+<div class="swiper-slide slide">
+    <div class="image">
+        <img src="../images/Drinks/MATCHA.jpg" alt="">
+    </div>
+    <div class="content">
+
+        <span>Special drinks</span>
+        <h3>Matcha</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
+        <a href="#" class="btn">order now</a>
+    </div>
+    
+
+</div>
+<div class="swiper-slide slide">
+    <div class="image">
+        <img src="../images/Drinks/DARKCHOCOLATE.jpg" alt="">
+    </div>
+    <div class="content">
+
+        <span>Special Drinks</span>
+        <h3>Dark Chocolate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
+        <a href="#" class="btn">order now</a>
+    </div>
+    
+
+</div>
+<div class="swiper-slide slide">
+    <div class="image">
+        <img src="../images/Drinks/WINTERMELON.jpg" alt="">
+    </div>
+    <div class="content">
+
+        <span>Special drinks</span>
+        <h3>Wintermelon</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
+        <a href="#" class="btn">order now</a>
+    </div>
+    
+
+</div>
+
             </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Noodles&Pasta/SOTANGHON.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>SOTANGHON</h3>
-            <p>
-                SMALL - 260 Pesos,
-                MEDIUM - 560 Pesos,
-                LARGE - 760 Pesos
-                
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Noodles&Pasta/CARBONARA.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>CARBONARA</h3>
-            <p>
-                COMBO - 199 Pesos,
-                W/FRIES - 99 Pesos,
-                W/LUMPIA - 129 Pesos,
-                W/CHICKEN - 159 Pesos,
-                
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Noodles&Pasta/SPAGHETTI2.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>SPAGHETTI</h3>
-            <p>
-                SMALL - 350 Pesos,
-                MEDIUM - 650 Pesos,
-                LARGE - 850 Pesos
-                
-            </p>
-            </div>
+
+                <div class="swiper-pagination"></div>
         </div>
     </section>
 
-<!-----------------------------------SNACKS--------------------------------->
-    <section data-aos="fade-down" class="food6" id="food">
-        <h2 class="heading" id="snacks" ><u>SNACKS</u></h2>
-        <div class="box-container">
-            <div class="box">
-                <img class="image" src="../images/Snacks/FRIES.jpg" alt="" />
-                <div class="content">
-                <img class="logo" src="../images/logo/1.jpg" alt="" />
-                <h3>FRIES</h3>
-                <p>
-                    69 Pesos
-                </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="../images/Snacks/UNNIE CORNDOG.jpg" alt="" />
-                <div class="content">
-                <img class="logo" src="../images/logo/1.jpg" alt="" />
-                <h3>UNNIE CORNDOG</h3>
-                <p>
-                    UNNIE CORNDOG - 55 Pesos, QUEZO CORNDOG 60 Pesos, MOZZA CORNDOG 70 Pesos  
-                </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="../images/Snacks/LAS PATATAS.jpg" alt="" />
-                <div class="content">
-                <img class="logo" src="../images/logo/1.jpg" alt="" />
-                <h3>LAS PATATAS</h3>
-                <p>
-                    LAS PATATAS - 60 Pesos,
-                    QUEZO LAS PATATAS - 65 Pesos,
-                    MOZZA LAS PATATAS - 75 Pesos,
-                </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="../images/Snacks/CORNDOG RAMEN.jpg" alt="" />
-                <div class="content">
-                <img class="logo" src="../images/logo/1.jpg" alt="" />
-                <h3>CORNDOG RAMEN</h3>
-                <p>
-                    CORNDOG RAMEN - 60 Pesos,
-                    QUEZO CORNDOG RAMEN - 65 Pesos,
-                    MOZZA CORNDOG RAMEN - 75 Pesos
-                </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="../images/Snacks/QUEZZO CLASSIC.jpg" alt="" />
-                <div class="content">
-                <img class="logo" src="../images/logo/1.jpg" alt="" />
-                <h3>QUEZO CLASSIC</h3>
-                <p>
-                    QUEZO CLASSIC - 80 Pesos,
-                    QUEZO DE PATATAS - 85 Pesos,
-                    QUEZO DE RAMEN - 83 Pesos
-                </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="../images/Snacks/MOZZA CLASSIC.jpg" alt="" />
-                <div class="content">
-                <img class="logo" src="../images/logo/1.jpg" alt="" />
-                <h3>MOZZA CLASSIC</h3>
-                <p>
-                    MOZZA CLASSIC - 95 Pesos,
-                    MOZZA DE PATATAS - 100 Pesos,
-                    MOZZA DE RAMEN - 98 Pesos
-                </p>
-                </div>
-            </div>
-            <div class="box">
-                <img class="image" src="../images/Snacks/QUEZZO n' MOZZA CLASSIC.jpg" alt="" />
-                <div class="content">
-                <img class="logo" src="../images/logo/1.jpg" alt="" />
-                <h3>QUEZO n' MOZZA CLASSIC</h3>
-                <p>
-                    QUEZO n' MOZZA CLASSIC - 90 Pesos,
-                    QUEZO n' LAS PATATAS - 95 Pesos,
-                    QUEZO n' MOZZA RAMEN - 93 Pesos
-                </p>
-                </div>
-            </div>
-        </section>
+<!-----------------------------------ALL FOODS--------------------------------->
 
-<!-----------------------------------DRINKS--------------------------------->
+<section class="dishes" id="dishes">
 
-            <section data-aos="fade-down" class="drinks" id="food">
-                <h1 class="heading"> <span>DRINKS</span></h1>
-<!-----------------------------------SOFT DRINKS--------------------------------->
-    <h2 class="heading" id="softdrinks" ><u>SOFT DRINKS</u></h2>
+    <h3 class="sub-heading"> Our Dishes</h3>
+    <h1 class="heading">Chicken Wings</h1>
+
     <div class="box-container">
         <div class="box">
-            <img class="image" src="../images/Drinks/PEPSI.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>PEPSI 8oz</h3>
-            <p>
-                15 Pesos
-            </p>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="../images/Chicken-Wings/BUFFALOWINGS.jpg" alt="">
+            <h3>Tasty Food</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
             </div>
+            <span>&#8369; 189</span>
+            <a href="#" class="btn">Order Now</a>
         </div>
         <div class="box">
-            <img class="image" src="../images/Drinks/COKE.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>COKE 18 oz</h3>
-            <p>
-                25 Pesos
-            </p>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="../images/Chicken-Wings/HONEY GLAZED CHICKEN WINGS.jpg" alt="">
+            <h3>Tasty Food</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
             </div>
+            <span>&#8369; 189</span>
+            <a href="#" class="btn">Order Now</a>
         </div>
         <div class="box">
-            <img class="image" src="../images/Drinks/ROYAL.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>ROYAL 18oz</h3>
-            <p>
-                25 Pesos
-            </p>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="../images/Chicken-Wings/SPICY GARLIC BUFFALO CHICKEN.jpg" alt="">
+            <h3>Tasty Food</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
             </div>
+            <span>&#8369; 189</span>
+            <a href="#" class="btn">Order Now</a>
         </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/COKE1.5.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>COKE 1.5L</h3>
-            <p>
-                75 Pesos
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/WATER.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>BOTTLED WATER</h3>
-            <p>
-                20 Pesos
-            </p>
-            </div>
-        </div>
-                            
+    </div>
+
 </section>
 
-<!-----------------------------------MILKTEA--------------------------------->
-
-<section data-aos="fade-down" class="drinks2" id="food">
-    <h2 class="heading" id="milktea" ><u> MILKTEA </u></h2>
-    <div class="box-container">
-        <div class="box">
-            <img class="image" src="../images/Drinks/TARO.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>TARO</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/MATCHA.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>MATCHA</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49  
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/OKINAWA.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>OKINAWA</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/HOKKAIDO.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>HOKKAIDO</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/WINTERMELON.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>WINTERMELON</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/CHOCOLATE.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>CHOCOLATE</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/RED VELVET.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>RED VELVET</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/BLACK FOREST.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>BLACK FOREST</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/COOKIES & CREAM.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>COOKIES & CREAM</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/DARK CHOCOLATE.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>DARK CHOCOLATE</h3>
-            <p>
-                16oz - &#8369 39 <br> 22oz - &#8369 49
-            </p>
-            </div>
-        </div>
-    </section>
-
-<!-----------------------------------FRAPPE--------------------------------->
-
-<section data-aos="fade-down" class="drinks3" id="food">
-    <h2 class="heading" id="frappe" ><u> FRAPPE </u></h2>
-    <div class="box-container">
-        <div class="box">
-            <img class="image" src="../images/Drinks/MATCHAF.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>MATCHA</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/MANGO GRAHAM.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>MANGO GRAHAM</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70  
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/CARAMEL CHOCO.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>CARAMEL CHOCO</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/DOUBLE CHOCOLATE.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>DOUBLE CHOCOLATE</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/STRAW BERRY.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>STRAWBERRY</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/TARO.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>TARO</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/MOCHA.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>MOCHA</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70
-            </p>
-            </div>
-        </div>
-        <div class="box">
-            <img class="image" src="../images/Drinks/COOKIES & CREAM.jpg" alt="" />
-            <div class="content">
-            <img class="logo" src="../images/logo/1.jpg" alt="" />
-            <h3>COOKIES & CREAM</h3>
-            <p>
-                16oz - &#8369 60 <br> 22oz - &#8369 70
-            </p>
-            </div>
-        </div>
-    </section>
 
 <!-----------------------------------FOOTER--------------------------------->
     <footer id="socials">
@@ -719,10 +249,19 @@
 
 <!-----------------------------------END LINE--------------------------------->
 
-        <script src="/js/main.js"></script>
+<!-----------------------------------SWIPER LINK--------------------------------->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
     </script>
+<!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
+<!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
+<script src="/js/main.js"></script>
+
 </body>
 </html>
