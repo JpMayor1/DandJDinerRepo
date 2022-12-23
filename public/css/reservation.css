@@ -3,8 +3,7 @@ html, body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(100, 100, 93);
-    background-image: url(../images/logo/2.jpg);
-    background-blend-mode: lighten;
+    background-image: url(../d&j/mainbackground2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,20 +17,24 @@ html, body {
 
 .back {
     position: fixed;
-    top: 5px;
-    left: 5px;  
+    top: 7px;
+    left: 10px;  
+    background: #282a3a;
+    padding: 1rem;
+    border-radius: 3rem;
+    z-index: 999;
 }
 
 .back a {
-    color: black;
-    font-size: large;
+    color: #faf8f1;
+    font-size: 1rem;
     font-weight: 300;
     text-decoration: none;
 }
 
 .back a:hover {
     color: white;
-    font-size: larger;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -48,7 +51,7 @@ html, body {
     border: none;
     border-radius: 10px;
     height: 85vh;
-    width: 700px;
+    width: 900px;
     text-align: center;
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(5px);
@@ -104,19 +107,19 @@ html, body {
     margin: 1em;
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(5px);
-    width: 90%;
+    width: 100%;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     padding: 0 1.5em;
     
 }
 .section-header {
     font-family: "Metal Mania";
     font-weight: normal;
-    color: #333;
+    color: #faf8f1;
     text-align: center;
     font-size: 2.5em;
 }
@@ -124,7 +127,7 @@ html, body {
 .header-tree {
     font-family: "Metal Mania";
     font-weight: normal;
-    color: #333;
+    color: #faf8f1;
     text-align: center;
     font-size: 2em;
 }
@@ -166,14 +169,14 @@ html, body {
 
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color: #282a3a;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: #4B56D2;
 }
 
 
@@ -188,7 +191,7 @@ html, body {
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: #333;
+    color: #faf8f1;
     margin-bottom: 15px;
 }
 
@@ -204,7 +207,8 @@ html, body {
 
 .shop-item-price {
     flex-grow: 1;
-    color: #333;
+    color: #282a3a;
+    font-size: 2rem;
 }
 
 .shop-items {
@@ -260,7 +264,7 @@ html, body {
 
 .btn-danger {
     color: white;
-    background-color: #EB5757;
+    background-color: red;
     border: none;
     border-radius: .3em;
     font-weight: bold;
@@ -305,7 +309,7 @@ html, body {
 }
 
 .cart-total-price {
-    color: #333;
+    color: #282a3a;
     font-size: 1.1em;
 }
 
