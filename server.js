@@ -63,6 +63,10 @@ app.get("/users/reservation", (req, res) => {
     res.render("reservation");
 });
 
+app.get("/users/fillupform", (req, res) => {
+    res.render("fillupform");
+});
+
 app.post("/users/register", async (req, res) => {
     let { name, email, password, password2 } = req.body;
 
@@ -153,7 +157,6 @@ function checkNotAuthenticated(req, res, next) {
     }
     res.redirect("/users/login");
 }
-
 
 ////////////////////////////////// RESERVATION
 
