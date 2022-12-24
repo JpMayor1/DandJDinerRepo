@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    backdrop-filter: blur(5px);
+}
+.form{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form h2 {
+    color: white;
+    font-size: 50px;
+    font-family: "Metal Mania";
+    padding: 1rem;
+}
+
+.form .submit-btn {
+    padding: .5rem .7rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    font-weight: 300;
+    background: #282a3a;
+    backdrop-filter: blur(5px);
+    color: #faf8f1;
+    cursor: pointer;
+}
+
+.main-form {
+    border: none;
+    border-radius: 2rem;
+    background-color: #282a3a;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.form-left {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #faf8f1;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.form-left h1 {
+    color: #FFF6BF;
+    font-size: 40px;
+    cursor: default;
+}
+
+.form-left h2 {
+    font-size: 35px;
+    color: #CCD6A6;
+    cursor: default;
+}
+
+.form-left p {
+    color: #65647C;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: default;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-left hr {
+    width: 80%;
+    margin: .5rem;
+    cursor: default;
+}
+
+.form-left .inner-form{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.form-left .fa-phone {
+    color: #000000;
+    font-size: 20px;
+    cursor: default;
+}
+
+.form-left .fa-facebook,.form-left .fa-instagram{
+    font-size: 27px;
+}
+
+.form-left .fa-facebook{
+    color: rgb(38, 38, 235);
+}
+
+.form-left .fa-instagram{
+    color: rgb(223, 91, 124);
+}
+
+.form-right {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #faf8f1;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 96%;
+}
+
+.form-right label {
+    color: #CCD6A6;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.form-right .input-box{
+    width: 50%;
+    height: 25px;
+    background: black;
+    backdrop-filter: blur(5px);
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: default;
+    padding: .1rem .4rem;
+}
+
+.form-right .input-box::placeholder{
+    color: white;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: white;
+    cursor: pointer;
+}
