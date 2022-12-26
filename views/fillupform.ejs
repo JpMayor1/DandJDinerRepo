@@ -28,11 +28,15 @@
                     <h2>Contact Us</h2>
                     <div class="inner-form">
                     
-                    <i class="fa-solid fa-phone"> 09090909090</i>
+                    <i class="fa-solid fa-phone"> 0910 021 9750</i>
 
                     <a href="https://web.facebook.com/profile.php?id=100085932051209" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
     
                     <a href="https://www.instagram.com/dj.diner/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <h2>Location</h2>
+                <div class="inner-form">
+                    <p>P-3, Jose Panganiban, Camarines Norte</p>
                 </div>
                 </div>
                 <div class="form-right">
@@ -75,10 +79,19 @@
                     <option value="4">table 4 </option>
                     <option value="5">Family Table</option>
                 </select>
+                <label for="paymentmethod">Choose a payment Method</label>
+                <div class="input-box1"><i class="fa-brands fa-paypal"></i>
+                <img src="../images/logo/Gcash.jpg" alt="">
+                <p>Choose Other Option</p>
+            </div>
             </div>
                 
             </main-form>
+            <div class="wrapper">
+            <a class="cancel-btn" onclick="checker()" href="/users/reservation">Cancel Reservation</a>
+
             <button class="submit-btn" onclick="alert('Thank Your For Your Order!'), location.href='/users/reservation'" >Reserve Now</button>
+        </div>
         </container>
     </container>
 
@@ -89,5 +102,14 @@
     AOS.init();
     </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            function checker() {
+                var result = confirm('Are you sure?');
+                if(result == false) {
+                    event.preventDefault();
+                }
+            }
+        </script>
 </body>
 </html>

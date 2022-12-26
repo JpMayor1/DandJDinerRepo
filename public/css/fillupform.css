@@ -16,8 +16,8 @@
 .form{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    height: 90vh;
-    width: 90vw;
+    height: 97vh;
+    width: 97vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -28,12 +28,20 @@
     color: white;
     font-size: 50px;
     font-family: "Metal Mania";
-    padding: 1rem;
+    padding: .5rem;
+}
+
+.wrapper {
+    margin: 1rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .form .submit-btn {
+    height: 50px;
     padding: .5rem .7rem;
-    margin: 1rem;
+    margin: .2rem 1rem;
     border-radius: 10px;
     border: none;
     font-size: 30px;
@@ -42,6 +50,31 @@
     backdrop-filter: blur(5px);
     color: #faf8f1;
     cursor: pointer;
+}
+
+.form .cancel-btn {
+    height: 50px;
+    padding: .5rem .7rem;
+    margin: .2rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    font-weight: 300;
+    background: #282a3a;
+    backdrop-filter: blur(5px);
+    color: #faf8f1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form .submit-btn:hover{
+    font-size: 32px;
+    height: 52px;
+}
+
+.cancel-btn:hover {
+    font-size: 32px;
+    height: 52px;
 }
 
 .main-form {
@@ -97,7 +130,7 @@
 .form-left .inner-form{
     width: 90%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-evenly;
 }
 
@@ -147,6 +180,49 @@
     text-align: center;
     cursor: default;
     padding: .1rem .4rem;
+}
+
+.form-right .input-box1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 70%;
+    height: 30px;
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: default;
+    padding: .1rem .4rem;
+}
+
+.input-box1 p {
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.input-box1 p:hover {
+    font-size: 20px;
+}
+
+.input-box1 img {
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.input-box1 img:hover {
+    height: 35px;
+    width: auto;
+}
+
+.fa-paypal {
+    font-size: 30px;
+    color: blue;
+}
+
+.fa-paypal:hover {
+    font-size: 37px;
 }
 
 .form-right .input-box::placeholder{
