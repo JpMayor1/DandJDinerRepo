@@ -184,10 +184,15 @@ header button {
 
 .menu .home-slider .slide .image {
     flex: 1 1 45rem;
+    height: 350px;
+    width: auto;
+
 }
 
 .menu .home-slider .slide .image2 {
     flex: 1 1 45rem;
+    height: 350px;
+    width: auto;
 }
 
 .menu .home-slider .slide .image2 img {
@@ -342,7 +347,7 @@ footer {
     width: 100vw;
     /* background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(5px); */
-    background: var(--white);
+    background: rgb(216, 213, 213);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,7 +371,7 @@ footer i {
     width: 100vw;
     /* background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(5px); */
-    background: var(--white);
+    background: rgb(216, 213, 213);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
