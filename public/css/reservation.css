@@ -295,20 +295,23 @@ html, body {
 }
 
 .cart-total {
-    text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
+    position: absolute;
+    text-align: center;
+    padding: .5rem;
+    left: 45%;
+    width: fit-content;
+    letter-spacing: 3px;
 }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: rgb(240, 240, 240);
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: #282a3a;
+    color: blue;
     font-size: 1.1em;
 }
 
@@ -342,7 +345,7 @@ footer i {
 }
 
 .fa-instagram {
-    color: black;
+    color: rgb(182, 0, 55);
 }
 
 .footer2 {
@@ -356,4 +359,43 @@ footer i {
     align-items: center;
     color: black;
     cursor: default;
+}
+
+/************************************MEDIA QUERIES*/
+@media(max-width: 700px) {
+
+    .main-container{
+        width: 100vw;
+    }
+
+    .main-container .table{
+        margin-top: 5rem;
+        height: 50%;
+    }
+
+    .main-container .table .main-form1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 430px;
+    }
+
+    .main-container .table .main-form1 .swiper-slide img {
+        width: 300px;
+    }
+
+    .content-section{
+        width: 100vw;
+        margin: 0;
+    }
+    .socials, .footer2 {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cart-row {
+        padding-left: 1rem;
+        margin: 0;
+    }
 }

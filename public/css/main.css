@@ -363,7 +363,7 @@ footer i {
 }
 
 .fa-instagram {
-    color: black;
+    color: rgb(182, 0, 55);
 }
 
 .footer2 {
@@ -501,7 +501,7 @@ footer i {
     
 }
 
-@media (max-width: 820px) {
+/* @media (max-width: 820px) {
     .home {
         height: 100%;
         width: 100%;
@@ -540,7 +540,7 @@ footer i {
     
 
     .menu {
-        margin-top: -30rem;
+        margin-top: 0;
         padding: 3rem 9%;
         padding-bottom: 1rem;
         background: hsl(0 0% 100% / 0.1);
@@ -576,16 +576,16 @@ footer i {
         width: 90%;
     }
     
-}
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 800px) {
 
     .home .image {
         display: none;
         margin-bottom: 0;
     }
     .menu {
-        margin-top: -30rem;
+        margin-top: 0;
         padding: 1rem 1%;
         background: hsl(0 0% 100% / 0.1);
         backdrop-filter: blur(5px);
@@ -656,15 +656,15 @@ footer i {
         background: var(--white);
         color: var(--blue);
     }
-}
+} */
 
-@media (max-width: 520px) {
+@media (max-width: 800px) {
     .home .image {
         display: none;
         margin-bottom: 0;
     }
     .menu {
-        margin-top: -25rem;
+        margin-top: 0;
         padding: 1rem 1%;
         background: hsl(0 0% 100% / 0.1);
         backdrop-filter: blur(5px);

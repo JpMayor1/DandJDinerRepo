@@ -196,13 +196,18 @@
     padding: .1rem .4rem;
 }
 
+.paymentmethod {
+    padding: 2px;
+}
+
 .input-box1 p {
     letter-spacing: 1px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .input-box1 p:hover {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .input-box1 img {
@@ -232,4 +237,184 @@
 ::-webkit-calendar-picker-indicator{
     background-color: white;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .form-left {
+        text-align: center;
+    }
+
+    .form-left h1 {
+        color: #FFF6BF;
+        font-size:30px;
+        cursor: default;
+    }
+    
+    .form-left h2 {
+        font-size: 25px;
+        color: #CCD6A6;
+        cursor: default;
+    }
+    
+    .form-left p {
+        color: #65647C;
+        font-size: 15px;
+        font-weight: 400;
+        cursor: default;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .form-left hr {
+        width: 80%;
+        margin: .5rem;
+        cursor: default;
+    }
+    
+    .form-left .inner-form{
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+    
+    .form-left .fa-phone {
+        color: #000000;
+        font-size: 10px;
+        cursor: default;
+    }
+    
+    .form-left .fa-facebook,.form-left .fa-instagram{
+        font-size: 17px;
+    }
+    
+    .form-left .fa-facebook{
+        color: rgb(38, 38, 235);
+    }
+    
+    .form-left .fa-instagram{
+        color: rgb(223, 91, 124);
+    }
+
+    .form-right {
+        flex: 1 1 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #faf8f1;
+        border-radius: 1rem;
+        padding: 1rem;
+        height: 96%;
+    }
+    
+    .form-right label {
+        color: #CCD6A6;
+        font-size: 15px;
+        margin: 5px;
+    }
+    
+    .form-right .input-box{
+        width: 90%;
+        height: 25px;
+        background: black;
+        backdrop-filter: blur(5px);
+        color: white;
+        border: none;
+        text-align: center;
+        cursor: default;
+        padding: .1rem .4rem;
+    }
+    
+    .form-right .input-box1{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        width: 90%;
+        height: 30px;
+        background: transparent;
+        color: white;
+        border: none;
+        text-align: center;
+        cursor: default;
+        padding: .1rem .4rem;
+    }
+    
+    .input-box1 p {
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    
+    .input-box1 p:hover {
+        font-size: 12px;
+    }
+    
+    .input-box1 img {
+        height: 20px;
+        width: auto;
+        border-radius: 50%;
+        margin-left: 1rem;
+    }
+    .input-box1 img:hover {
+        height: 25px;
+        width: auto;
+    }
+    
+    .fa-paypal {
+        font-size: 20px;
+        color: blue;
+    }
+    
+    .fa-paypal:hover {
+        font-size: 27px;
+    }
+    
+    .form-right .input-box::placeholder{
+        color: white;
+    }
+    
+    ::-webkit-calendar-picker-indicator{
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .form .submit-btn {
+        height: 40px;
+        padding: .5rem .7rem;
+        margin: .2rem 1rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        background: #282a3a;
+        backdrop-filter: blur(5px);
+        color: #faf8f1;
+        cursor: pointer;
+    }
+    
+    .form .cancel-btn {
+        height: 40px;
+        padding: .5rem .7rem;
+        margin: .2rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        background: #282a3a;
+        backdrop-filter: blur(5px);
+        color: #faf8f1;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .form .submit-btn:hover{
+        font-size: 23px;
+        height: 42px;
+    }
+    
+    .cancel-btn:hover {
+        font-size: 22px;
+        height: 42px;
+    }
 }
