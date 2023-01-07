@@ -4,19 +4,41 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="/css/index.css" />
+        <title>Welcome page</title>
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <div class="content">
-            <div class="container">
-            <h1>WELCOME</h1>
-            <h1>to</h1>
-            <h1>D&J DINER</h1>
-            <h2>To access the main page, Please click</h2>
+        <div class="transparent"></div>
+        <header>
+            <div class="logo">
+                <img src="/images/logo/1.jpg" alt="" />
+                <p>D&J Diner</p>
+            </div>
+        </header>
 
-            <a href="/users/login">Register and Login</a>
+        <div class="left-container">
+            <h1>Welcome!</h1>
+            <h3>Provide the best food for you.</h3>
+            <p>
+                My favorite thing to make <br />
+                for dinner,<br />
+                is <br />reservation.
+            </p>
+            <div class="buttons">
+                <button><a href="users/register">Register</a></button>
+                <button><a href="users/login">Login</a></button>
+            </div>
         </div>
+        <div class="right-container">
+            <img src="../images/welcome-page/d&j.jpg" alt="" class="image-1" />
+            <img src="../images/welcome-page/corndog.png" alt="" class="image-2" />
+            <img src="../images/welcome-page/drink.jpg" alt="" class="image-3" />
         </div>
     </body>
 </html>
