@@ -379,42 +379,54 @@
         cursor: pointer;
     }
 
+    .wrapper {
+        width: 100%;
+    }
+
     .form .submit-btn {
+        text-align: center;
+        width: 150px;
         height: 40px;
         padding: .5rem .7rem;
         margin: .2rem 1rem;
         border-radius: 10px;
         border: none;
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 15px;
+        font-weight: 200;
         background: #282a3a;
-        backdrop-filter: blur(5px);
         color: #faf8f1;
         cursor: pointer;
     }
     
     .form .cancel-btn {
+        width: 150px;
+        text-align: center;
         height: 40px;
         padding: .5rem .7rem;
         margin: .2rem;
         border-radius: 10px;
         border: none;
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 200;
         background: #282a3a;
-        backdrop-filter: blur(5px);
         color: #faf8f1;
         cursor: pointer;
         text-decoration: none;
     }
     
     .form .submit-btn:hover{
-        font-size: 23px;
+        font-size: 16px;
         height: 42px;
+        width: 160px;
     }
     
     .cancel-btn:hover {
-        font-size: 22px;
+        font-size: 16px;
         height: 42px;
+        width: 160px;
+    }
+
+    .main-form {
+        height: 70vh;
     }
 }

@@ -144,7 +144,7 @@ header .logo p {
 .right-container .image-3 {
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 0;
     height: 200px;
     border-radius: 100px;
     width: auto;
@@ -159,43 +159,60 @@ header .logo p {
 /************************************** MEDIA QUERIES */
 
 @media screen and (max-width: 800px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    * {
         padding: 0;
         margin: 0;
     }
     .transparent {
         display: none;
     }
-    
+
     header {
         height: 100px;
-        width: 100vw;
+        width: 55vw;
     }
-    
+
     header .logo {
-        padding: 25px 0 25px 10px;
+        padding: 10px 0 10px 10px;
         display: flex;
-        width: 340px;
+        width: 300px;
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     header .logo img {
-        height: 90px;
+        height: 70px;
         width: auto;
         border-radius: 100%;
     }
-    
+
     header .logo p {
-        font-size: 32px;
+        font-size: 25px;
         font-weight: 400;
         cursor: default;
     }
-    
+
+    .top {
+        display: none;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .right-container .image-1 {
+        display: none;
+    }
+
+    .right-container .image-2 {
+        display: none;
+    }
+
+    .right-container .image-3 {
+        display: none;
+    }
+
+
     .left-container {
         height: 80%;
         width: 100vw;
@@ -203,21 +220,21 @@ header .logo p {
         left: 0px;
         text-align: center;
     }
-    
+
     .left-container h1 {
         font-size: 50px;
         font-weight: bolder;
         padding: 35px 0;
         cursor: default;
     }
-    
+
     .left-container h3 {
         font-size: 30px;
         padding: 25px 0;
         font-weight: 400;
         cursor: default;
     }
-    
+
     .left-container p {
         font-size: 28px;
         font-weight: 100;
@@ -225,7 +242,7 @@ header .logo p {
         padding: 20px 0;
         cursor: default;
     }
-    
+
     .left-container .buttons {
         height: 50px;
         width: 80%;
@@ -236,7 +253,7 @@ header .logo p {
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     .left-container .buttons button {
         font-size: 20px;
         background-image: linear-gradient(90deg, #ff3c3c, #ff9900);
@@ -245,62 +262,31 @@ header .logo p {
         border-radius: 100px;
         box-shadow: 1px 5px rgb(44, 43, 43);
     }
-    
+
     .left-container .buttons button a {
         text-decoration: none;
         color: white;
         font-size: 20px;
         font-weight: 400;
     }
-    
+
     .left-container .buttons button a:hover {
         font-size: 25px;
-    }
-    
-    .right-container {
-        height: 90%;
-        width: 700px;
-        position: absolute;
-        top: 700px;
-        right: 0px;
-        background-color: #FF3C3C;
-    }
-    
-    .right-container .image-1 {
-        height: 80%;
-        width: 70%;
-        border-radius: 8px;
-    }
-    
-    .right-container .image-2 {
-        position: absolute;
-        bottom: 0px;
-        left: 100px;
-        height: 120px;
-        width: 140px;
-        z-index: 1;
-        border-radius: 100%;
-        transform: rotate(20deg);
-    }
-    
-    .right-container .image-3 {
-        position: absolute;
-        top: 0;
-        right: -10px;
-        height: 150px;
-        border-radius: 100px;
-        width: auto;
-        z-index: 1;
-        transform: rotate(20deg);
     }
 
     .footer {
         position: relative;
-        top: 700px;
+        top: 60px;
         width: 100vw;
-        height: 80px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .footer h4 {
+        color: white;
+        font-size: 14px;
+        font-weight: 100;
+        cursor: default;
     }
 }
