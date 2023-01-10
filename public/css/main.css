@@ -282,8 +282,7 @@ header button {
     width: 50%;
 }
 
-.dishes .box-container .box .fa-heart,
-.dishes .box-container .box .fa-eye{
+.dishes .box-container .box .fa-heart {
     position: absolute;
     top: 1.5rem;
     border-radius: 50%;
@@ -294,8 +293,11 @@ header button {
     color: var(--blue);
 }
 
-.dishes .box-container .box .fa-heart:hover,
-.dishes .box-container .box .fa-eye:hover{
+.dishes .box-container .box .fa-eye {
+    display: none;
+}
+
+.dishes .box-container .box .fa-heart:hover {
     color: var(--lightbrown);
 }
 

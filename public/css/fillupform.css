@@ -32,9 +32,13 @@
 }
 
 .wrapper {
-    margin: 1rem;
-    width: 60%;
+    margin: 0;
+    max-width: 500px;
+    width: 40%;
     display: flex;
+    position: relative;
+    top: -60px;
+    left: -250px;
     justify-content: space-evenly;
 }
 
@@ -43,8 +47,8 @@
     padding: .5rem .7rem;
     margin: .2rem 1rem;
     border-radius: 10px;
-    border: none;
-    font-size: 30px;
+    border: 1px solid black;
+    font-size: 20px;
     font-weight: 300;
     background: #282a3a;
     backdrop-filter: blur(5px);
@@ -53,12 +57,12 @@
 }
 
 .form .cancel-btn {
+    border: 1px solid black;
     height: 50px;
     padding: .5rem .7rem;
     margin: .2rem;
     border-radius: 10px;
-    border: none;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     background: #282a3a;
     backdrop-filter: blur(5px);
@@ -68,12 +72,12 @@
 }
 
 .form .submit-btn:hover{
-    font-size: 32px;
+    font-size: 23px;
     height: 52px;
 }
 
 .cancel-btn:hover {
-    font-size: 32px;
+    font-size: 23px;
     height: 52px;
 }
 
@@ -304,8 +308,8 @@
         flex-direction: column;
         border: 1px solid #faf8f1;
         border-radius: 1rem;
-        padding: 1rem;
-        height: 96%;
+        padding: .5rem;
+        height: 98%;
     }
     
     .form-right label {
@@ -380,13 +384,17 @@
     }
 
     .wrapper {
-        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 700px;
+        width: 60%;
     }
 
     .form .submit-btn {
         text-align: center;
         width: 150px;
-        height: 40px;
+        height: 35px;
         padding: .5rem .7rem;
         margin: .2rem 1rem;
         border-radius: 10px;
@@ -401,12 +409,12 @@
     .form .cancel-btn {
         width: 150px;
         text-align: center;
-        height: 40px;
+        height: 35px;
         padding: .5rem .7rem;
         margin: .2rem;
         border-radius: 10px;
         border: none;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 200;
         background: #282a3a;
         color: #faf8f1;
@@ -415,18 +423,18 @@
     }
     
     .form .submit-btn:hover{
-        font-size: 16px;
-        height: 42px;
-        width: 160px;
+        font-size: 17px;
+        height: 36px;
+        width: 155px;
     }
     
     .cancel-btn:hover {
-        font-size: 16px;
-        height: 42px;
-        width: 160px;
+        font-size: 17px;
+        height: 36px;
+        width: 165px;
     }
 
     .main-form {
-        height: 70vh;
+        height: 75vh;
     }
 }
