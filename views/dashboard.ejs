@@ -1,923 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D&J Diner</title>
-    <!--------------------- font awsome cdn link ---------------------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <!--------------------- SWIPER LINK ---------------------->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-    <!--------------------- link to css ---------------------->
-    <link rel="stylesheet" href="/css/main.css">
-    
-</head>
-<body>
-
-<!-----------------------------------NAV SECTION--------------------------------->
-        <header>
-            <img class="logo" src="/images/logo/1.jpg" alt="D&J logo" />
-    
-            <div id="menu-bar" class="fas fa-bars"></div>
-    
-            <nav class="navbar">
-            <a href="#home">HOME</a> 
-            <a href="#menu">MENU</a> 
-            <a href="#socials">FOLLOW US</a>
-            <a href="reservation">RESERVATION</a>
-            </nav>
-
-            <a href="/users/logout" class="logout">Logout</a>
-        </header>
-<!-----------------------------------HOME SECTION--------------------------------->
-
-
-        <section class="main-page">
-            
-            <section class="home" id="home">
-                <div class="home-content">
-                    <h3>Food made with love by D&J diner</h3>
-                    <p>
-                        “Food is one part of the experience. And it has to be somewhere
-                        between 50 to 60 percent of the dining experience. But the rest counts
-                        as well: The mood, the atmosphere, the music, the feeling, the design,
-                        the harmony between what you have on the plate and what surrounds the
-                        plate.” – Alain Ducasse, Chef.
-                    </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sidebar</title>
+        <!-- icon link -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- css link -->
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="../images/index/1.jpg" alt="" />
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">D and J</span>
+                        <span class="business">Diner</span>
+                    </div>
                 </div>
-            
-                <div class="image">
-                    <img src="../images/logo/1.jpg" alt="" />
+                <i class="bx bx-chevron-right toggle"></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                            <li class="nav-link">
+                                <a href="#home">
+                                    <i class="bx bx-home icon"></i>
+                                    <span class="text nav-text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#about">
+                                    <i class="bx bx-question-mark icon"></i>
+                                    <span class="text nav-text">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#contact">
+                                    <i class="bx bxs-contact icon"></i>
+                                    <span class="text nav-text">Contact</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="reservation">
+                                    <i class="bx bx-notepad icon"></i>
+                                    <span class="text nav-text"
+                                        >Reservation</span
+                                    >
+                                </a>
+                            </li>
+                    </ul>
+                    <div class="bottom-content">
+                        <li class="nav-link">
+                            <a href="https://web.facebook.com/profile.php?id=100085932051209" target="_blank">
+                                <i class="bx bxl-facebook icon"></i>
+                                <span class="text nav-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="https://www.instagram.com/dj.diner/" target="_blank">
+                                <i class="bx bxl-instagram icon"></i>
+                                <span class="text nav-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="logout">
+                            <a href="/users/logout" class="logout">
+                                <i class="bx bx-log-out icon"></i>
+                                <span class="text nav-text">Logout</span>
+                            </a>
+                        </li>
+                    </div>
                 </div>
-            </section>
-<!-----------------------------------FOOD SECTION--------------------------------->
-            
-    <section class="menu" id="menu">
-        <div class="swiper-container home-slider">
-
-            <div class="swiper-wrapper wrapper">
-<!-----------------------------------CORNDOG SECTION--------------------------------->
-                <div class="swiper-slide slide">
-
-                    <div class="image">
-                        <img src="../images/Snacks/unniecorndog.jpg" alt="">
-                    </div>
-
-                    <div class="content">
-
-                        <span>Popular</span>
-                        <h3>Unnie Corndog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-                        <a href="reservation" class="btn">order now</a>
-                    </div>
-                    
+            </div>
+        </nav>
+        <section class="home" id="home">
+            <div class="up-container">
+                <div class="image-container">
+                    <img src="../images/homeimg/1.jpg" alt="" id="poster">
                 </div>
-
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="../images/Snacks/laspatatas.jpg" alt="">
-                    </div>
-                    <div class="content">
-
-                        <span>Popular</span>
-                        <h3>Las Patatas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-                        <a href="reservation" class="btn">order now</a>
-                    </div>
-
+                <div class="image-text">
+                    <h1 id="title">Spaghetti</h1>
+                    <h3 id="price">₱55</h3>
+                    <button><a href="reservation">Order Now</a></button>
                 </div>
-                <div class="swiper-slide slide">
-
-                    <div class="image2">
-                        <img src="../images/Snacks/quezzoclassic.jpg" alt="">
-                    </div>
-
-                    <div class="content">
-
-                        <span>Popular</span>
-                        <h3>Quezzo Classic</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-                        <a href="reservation" class="btn">order now</a>
-                    </div>
-                    
-
+                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D5CEA3" fill-opacity="1" d="M0,192L20,208C40,224,80,256,120,224C160,192,200,96,240,80C280,64,320,128,360,176C400,224,440,256,480,224C520,192,560,96,600,64C640,32,680,64,720,112C760,160,800,224,840,218.7C880,213,920,139,960,112C1000,85,1040,107,1080,96C1120,85,1160,43,1200,69.3C1240,96,1280,192,1320,197.3C1360,203,1400,117,1420,74.7L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+            </div>
+            <div class="down-container">
+                <div class="card">
+                    <img src="../images/homeimg/1.jpg" alt="" class="dis">
+                    <h4>₱55</h4>
+                    <h5>Spaghetti</h5>
                 </div>
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="../images/Snacks/mozzaclassic.jpg" alt="">
-                    </div>
-                    <div class="content">
-
-                        <span>Popular</span>
-                        <h3>Mozza Classic</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-                        <a href="reservation" class="btn">order now</a>
-                    </div>
-                    
-
+                <div class="card">
+                    <img src="../images/homeimg/2.jpg" alt="" class="dis">
+                    <h4>₱189</h4>
+                    <h5>Buffalo Wings</h5>
                 </div>
-                <div class="swiper-slide slide">
-                    <div class="image">
-                        <img src="../images/Snacks/corndogramen.jpg" alt="">
-                    </div>
-                    <div class="content">
-
-                        <span>Popular</span>
-                        <h3>Corndog Ramen</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-                        <a href="reservation" class="btn">order now</a>
-                    </div>
-                    
-
+                <div class="card">
+                    <img src="../images/homeimg/3.jpg" alt="" class="dis">
+                    <h4>₱99</h4>
+                    <h5>Carbonara</h5>
                 </div>
-<!-----------------------------------MILKTEA SECTION--------------------------------->
-
-<div class="swiper-slide slide">
-    <div class="image">
-        <img src="../images/Drinks/MATCHA.jpg" alt="">
-    </div>
-    <div class="content">
-
-        <span>Popular</span>
-        <h3>Matcha</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-        <a href="reservation" class="btn">order now</a>
-    </div>
-    
-
-</div>
-<div class="swiper-slide slide">
-    <div class="image">
-        <img src="../images/Drinks/DARKCHOCOLATE.jpg" alt="">
-    </div>
-    <div class="content">
-
-        <span>Popular</span>
-        <h3>Dark Chocolate</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-        <a href="reservation" class="btn">order now</a>
-    </div>
-    
-
-</div>
-<div class="swiper-slide slide">
-    <div class="image">
-        <img src="../images/Drinks/WINTERMELON.jpg" alt="">
-    </div>
-    <div class="content">
-
-        <span>Popular</span>
-        <h3>Wintermelon</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis earum nisi!</p>
-        <a href="reservation" class="btn">order now</a>
-    </div>
-    
-
-</div>
-
+                <div class="card">
+                    <img src="../images/homeimg/4.jpg" alt="" class="dis">
+                    <h4>₱55</h4>
+                    <h5>Corndog</h5>
+                </div>
+                <div class="card">
+                    <img src="../images/homeimg/5.jpg" alt="" class="dis">
+                    <h4>₱179</h4>
+                    <h5>Honey Glazed</h5>
+                </div>
+                <div class="card">
+                    <img src="../images/homeimg/6.jpg" alt="" class="dis">
+                    <h4>₱95</h4>
+                    <h5>Mozza Classic</h5>
+                </div>
+                <div class="card">
+                    <img src="../images/homeimg/7.jpg" alt="" class="dis">
+                    <h4>₱80</h4>
+                    <h5>Quezzo classic</h5>
+                </div>
+                <div class="card">
+                    <img src="../images/homeimg/8.jpg" alt="" class="dis">
+                    <h4>₱189</h4>
+                    <h5>Spicy Buffalo</h5>
+                </div>
             </div>
-
-                <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-<!-----------------------------------ALL FOODS--------------------------------->
-
-<section class="dishes" id="dishes">
-
-    <h3 class="sub-heading">Foods</h3>
-    <h1 class="heading">Chicken Wings</h1>
-<!-----------------------------------CHICKEN WINGS--------------------------------->
-    <div class="box-container">
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/Chicken-Wings/BUFFALOWINGS.jpg" alt="">
-            <h3>Buffalo Wings</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
+            <div class="btns">
+                <i class='bx bxs-left-arrow'></i>
+                <i class='bx bxs-right-arrow' ></i>
             </div>
-            <span>&#8369; 189</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/Chicken-Wings/HONEY GLAZED CHICKEN WINGS.jpg" alt="">
-            <h3>Honey Glazed Chicken Wings</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 179</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/Chicken-Wings/SPICY GARLIC BUFFALO CHICKEN.jpg" alt="">
-            <h3>Spicy Garlic Buffalo Chicken</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 189</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-    </div>
-<!-----------------------------------SILOG MEALS--------------------------------->
-<h1 class="heading">Silog Meals</h1>
-    <div class="box-container">
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/HOTSILOG.jpg" alt="">
-            <h3>Hotsilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 99</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/LONGSILOG.jpg" alt="">
-            <h3>Longsilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 109</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/HAMSILOG.jpg" alt="">
-            <h3>Hamsilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 109</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/TOSILOG.jpg" alt="">
-            <h3>Tosilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 109</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/SPAMSILOG.jpg" alt="">
-            <h3>Spamsilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 109</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/CHICKSILOG.jpg" alt="">
-            <h3>Chicksilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 119</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/BANGSILOG.jpg" alt="">
-            <h3>Bangsilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 119</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/PORKSILOG.jpg" alt="">
-            <h3>Porksilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 129</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/SISILOG.jpg" alt="">
-            <h3>Sisilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 159</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-        <div class="box">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-            <img src="../images/SilogMeals/TAPSILOG.jpg" alt="">
-            <h3>Tapsilog</h3>
-            <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-            </div>
-            <span>&#8369; 149</span>
-            <a href="reservation" class="btn">Order Now</a>
-        </div>
-    </div>
-    <!-----------------------------------PLATTERS--------------------------------->
-<h1 class="heading">Platters</h1>
-<div class="box-container">
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Platters/LUMPIANG SHANGHAI.jpg" alt="">
-        <h3>Lumpiang Shanghai</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 80</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Platters/SWEET & SOUR.jpg" alt="">
-        <h3>Sweet and Sour</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 189</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Platters/CHAPSUEY.jpg" alt="">
-        <h3>chapsuey</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 220</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Platters/SISIG.jpg" alt="">
-        <h3>Sisig</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 220</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Platters/SINIGANG.jpg" alt="">
-        <h3>sinigang na baboy</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 250</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-</div>
-    <!-----------------------------------NOODLES & PASTA--------------------------------->
-<h1 class="heading">Noodles and Pasta</h1>
-<div class="box-container">
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Noodles&Pasta/SPAGHETTI1.jpg" alt="">
-        <h3>Spaghetti</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 55</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Noodles&Pasta/CARBONARA.jpg" alt="">
-        <h3>Carbonara</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 99</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Noodles&Pasta/SOTANGHON.jpg" alt="">
-        <h3>Sotanghon</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 260</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-</div>
-<!-----------------------------------SNACKS--------------------------------->
-<h1 class="heading">Snacks</h1>
-<div class="box-container">
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Snacks/fries.jpg" alt="">
-        <h3>Fries</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 69</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Snacks/unniecorndog.jpg" alt="">
-        <h3>Unnie Corndog</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 55</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Snacks/laspatatas.jpg" alt="">
-        <h3>Laspatatas</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 60</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Snacks/corndogramen.jpg" alt="">
-        <h3>Corndog Ramen</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 60</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Snacks/mozzaclassic.jpg" alt="">
-        <h3>Mozza Classic</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 95</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Snacks/quezzoclassic.jpg" alt="">
-        <h3>Quezzo Classic</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 80</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Snacks/quezzomozzaclassic.jpg" alt="">
-        <h3>Quezzo n' Mozza Classic</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>&#8369; 90</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-</div>
-
-<!-----------------------------------DRINKS SECTION--------------------------------->
-<h3 class="sub-heading">Drinks</h3>
-<h1 class="heading">Milktea</h1>
-<div class="box-container">
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/TARO.jpg" alt="">
-        <h3>Taro</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/MATCHA.jpg" alt="">
-        <h3>Matcha</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/OKINAWA.jpg" alt="">
-        <h3>Okinawa</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/HOKKAIDO.jpg" alt="">
-        <h3>Hokkaido</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/WINTERMELON.jpg" alt="">
-        <h3>Wintermelon</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/CHOCOLATE.jpg" alt="">
-        <h3>Chocolate</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/RED VELVET.jpg" alt="">
-        <h3>Red Velvet</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/BLACK FOREST.jpg" alt="">
-        <h3>Black Forest</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/COOKIES & CREAM.jpg" alt="">
-        <h3>Coockies & Cream</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/DARKCHOCOLATE.jpg" alt="">
-        <h3>Dark Chocolate</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 39</span>
-        <span>22oz &#8369; 49</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-</div>
-
-<h1 class="heading">Frappe</h1>
-<div class="box-container">
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/MANGO GRAHAM.jpg" alt="">
-        <h3>Mango Graham</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 60</span>
-        <span>22oz &#8369; 70</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/CARAMEL CHOCO.jpg" alt="">
-        <h3>Caramel Choco</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 60</span>
-        <span>22oz &#8369; 70</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/DOUBLE CHOCOLATE.jpg" alt="">
-        <h3>Double Chocolate</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 60</span>
-        <span>22oz &#8369; 70</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/MOCHA.jpg" alt="">
-        <h3>Mocha</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 60</span>
-        <span>22oz &#8369; 70</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="../images/Drinks/STRAW BERRY.jpg" alt="">
-        <h3>Strawberry</h3>
-        <div class="stars">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-        </div>
-        <span>16oz &#8369; 60</span>
-        <span>22oz &#8369; 70</span>
-        <a href="reservation" class="btn">Order Now</a>
-    </div>
-</div>
-
-    <!-----------------------------------END SECTION--------------------------------->
-</section>
-
-
-<!-----------------------------------FOOTER--------------------------------->
-    <footer id="socials">
-        <a href="https://web.facebook.com/profile.php?id=100085932051209" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
-
-        <a href="https://www.instagram.com/dj.diner/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-        
-        <i class="fa-brands fa-tiktok"></i>
-    </footer>
-    <footer" class="footer2">
-        <h4>&copy; 2022 by JpMayor <div class="fas fa-heart"></div></h4>
-    </footer>
         </section>
-
-<!-----------------------------------END LINE--------------------------------->
-
-<!-----------------------------------SWIPER LINK--------------------------------->
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-
-<!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
-<!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
-<!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
-<script src="/js/main.js"></script>
-
-</body>
+        <section class="about" id="about">
+            
+        </section>
+        <footer class="contact" id="contact">
+            <div class="text">0909090909</div>
+            <div class="text">d&j@gmail.com</div>
+        </footer>
+        <script src="/js/main.js"></script>
+    </body>
 </html>
