@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sidebar</title>
+        <!-- ANIMATION ON SCROLL LINK -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- icon link -->
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -14,6 +16,7 @@
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
+         <!-------------------------------- NAV BAR -->
         <nav class="sidebar close">
             <header>
                 <div class="image-text">
@@ -80,19 +83,20 @@
                 </div>
             </div>
         </nav>
+         <!-------------------------------- HOME PAGE -->
         <section class="home" id="home">
-            <div class="up-container">
+            <div class="up-container" data-aos="zoom-in-down" data-aos-duration="1000">
                 <div class="image-container">
                     <img src="../images/homeimg/1.jpg" alt="" id="poster">
                 </div>
                 <div class="image-text">
                     <h1 id="title">Spaghetti</h1>
                     <h3 id="price">₱55</h3>
-                    <button><a href="reservation">Order Now</a></button>
+                    <a href="reservation" class="btn">Order Now</a>
                 </div>
                 <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D5CEA3" fill-opacity="1" d="M0,192L20,208C40,224,80,256,120,224C160,192,200,96,240,80C280,64,320,128,360,176C400,224,440,256,480,224C520,192,560,96,600,64C640,32,680,64,720,112C760,160,800,224,840,218.7C880,213,920,139,960,112C1000,85,1040,107,1080,96C1120,85,1160,43,1200,69.3C1240,96,1280,192,1320,197.3C1360,203,1400,117,1420,74.7L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
             </div>
-            <div class="down-container">
+            <div class="down-container" data-aos="fade-left" data-aos-duration="1000">
                 <div class="card">
                     <img src="../images/homeimg/1.jpg" alt="" class="dis">
                     <h4>₱55</h4>
@@ -139,13 +143,59 @@
                 <i class='bx bxs-right-arrow' ></i>
             </div>
         </section>
-        <section class="about" id="about">
-            
+        <!-------------------------------- ABOUT PAGE -->
+        <section class="about welcome" id="about">
+            <h1 class="heading" data-aos="flip-left" data-aos-duration="1000">WELCOME TO D&J DINER</h1>
+            <center><h3 class="sub-heading" data-aos="zoom-in" data-aos-duration="1000"> ~ Delicious food, warm welcome awaits ~</h3></center>
+            <div class="box-container">
+                <div class="box" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="image">
+                        <img src="../images/homeimg/9.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>CLEAN ENVIRONMENT</h3>
+                        <p>Spotless and immaculate, our restaurant prides itself on maintaining the highest level of cleanliness for your dining pleasure.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="box" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="image">
+                        <img src="../images/homeimg/10.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>DELICIOUS FOODS</h3>
+                        <p>Our restaurant is proud to serve you delicious and satisfying meals made with the freshest ingredients. Come and treat your taste buds to something special today.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="box" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="image">
+                        <img src="../images/homeimg/11.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>BEST SELLER</h3>
+                        <p>Our menu features a selection of customer favorites, tried and true dishes that will delight your taste buds.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <footer class="contact" id="contact">
-            <div class="text">0909090909</div>
-            <div class="text">d&j@gmail.com</div>
+         <!-------------------------------- CONTACT PAGE -->
+        <footer class="contact" id="contact" data-aos="fade-up"
+        data-aos-duration="1000">
+            <div class="contacts">
+                <div class="text"><p><i class='bx bxs-phone'></i> 0910 021 9750</p></div>
+                <div class="text"><p><i class='bx bxs-envelope' ></i> d&jdiner@gmail.com</p></div>
+                <div class="text"><p><i class='bx bxs-home'></i> P-3 , Jose Panganiban, Philippines, 4606</p></div>
+            </div>
+            <div class="copy-right"><p><i class='bx bxs-copyright' ></i> 2022 by JpMayor</p></div>
         </footer>
+         <!-------------------------------- JAVASCRIPT -->
         <script src="/js/main.js"></script>
+         <!-- ANIMATION ON SCROLL JAVASCRIPT -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
