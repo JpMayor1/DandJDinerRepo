@@ -197,6 +197,7 @@ body {
 }
 
 .cart-row {
+    cursor: default;
     display: flex;
 }
 
@@ -266,66 +267,64 @@ body {
     left: 45%;
     width: fit-content;
     letter-spacing: 3px;
+    margin: 1rem;
+    cursor: default;
 }
 
 .cart-total-title {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.5em;
-    color: rgb(240, 240, 240);
-    margin-right: 20px;
+    color: var(--text-color);
+    cursor: default;
 }
 
 .cart-total-price {
-    color: blue;
-    font-size: 1.1em;
+    color: var(--text-color);
+    font-size: 1.4em;
+    cursor: default;
 }
 
 .btn-purchase {
     display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+    margin: 80px auto 20px auto;
+    font-size: 1.3rem;
+    cursor: default;
 }
 
 /****************************FOOTER********************************/
 
-footer {
-    padding-top: .5rem;
-    height: 50px;
+.contact {
+  
+    padding: 10px 15px;
+    
     width: 100vw;
-    /* background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(5px); */
-    background: white;
+    background: var(--toggle-color);
+    height: 20vh;
+   
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-footer i {
-    font-size: 40px;
-    margin: 1rem;
-}
-
-.fa-facebook {
-    color: rgb(54, 54, 230);
-}
-
-.fa-instagram {
-    color: rgb(182, 0, 55);
-}
-
-.footer2 {
-    height: 50px;
-    width: 100vw;
-    /* background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(5px); */
-    background: white;
+.contact .contacts {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: black;
+    justify-content: space-between;
+    width: 800px;
+    margin: .5rem;
+}
+.contact .contacts p {
+    font-size: 15px;
+    font-weight: 300;
     cursor: default;
 }
-
+.contact .copy-right {
+    margin: 1rem;
+}
+.contact .copy-right p {
+    font-size: 15px;
+    font-weight: 300;
+    cursor: default;
+}
 /************************************MEDIA QUERIES*/
 @media(max-width: 700px) {
 

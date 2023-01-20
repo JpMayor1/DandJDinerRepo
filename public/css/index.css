@@ -107,6 +107,7 @@ header .nav .link > a:hover, a:focus {
     font-weight: 300;
     color: var(--white);
     margin: 1rem;
+    cursor: default;
 }
 
 .hero p {
@@ -114,6 +115,7 @@ header .nav .link > a:hover, a:focus {
     font-weight: 200;
     color: var(--white);
     margin: .5rem;
+    cursor: default;
 }
 
 .hero .images {

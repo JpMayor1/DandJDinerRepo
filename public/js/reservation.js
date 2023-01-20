@@ -1,22 +1,3 @@
-////////////////////////////////FOR SLIDER IMAGES
-const swiper = new Swiper(".swiper", {
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    loop: true,
-
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready);
 } else {
@@ -72,12 +53,13 @@ function quantityChanged(event) {
 
 function addToCartClicked(event) {
     var button = event.target;
-    var shopItem = button.parentElement.parentElement;
-    var title = shopItem.getElementsByClassName("shop-item-title")[0].innerText;
-    var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
-    var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
+    var shopItem = button.closest('.shop-item');
+    var title = shopItem.querySelector(".shop-item-title").innerText;
+    var price = shopItem.querySelector(".shop-item-price").innerText;
+    var imageSrc = shopItem.querySelector(".shop-item-image").src;
     addItemToCart(title, price, imageSrc);
     updateCartTotal();
+    alert("Added to cart")
 }
 
 function addItemToCart(title, price, imageSrc) {
