@@ -5,51 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fillupform Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ANIMATION ON SCROLL LINK -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon link -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/fillupform.css">
 </head>
 <body>
-    <container class="main-container">
         <container class="form">
             <!-------------------------------------FORM---------------------------->
             <h2>Reservation</h2>
             <main-form class="main-form">
                 <div class="form-left">
-                    <h1>Time Open</h1>
-                    <h2>Monday-Sunday</h2>
-                    <p>8am - 11am (Breakfast)</p>
-                    <p>11am - 10pm (Lunch/Dinner)</p>
-                    <hr>
-                    <h2>Contact Us</h2>
-                    <div class="inner-form">
-                    
-                    <i class="fa-solid fa-phone"> 0910 - 021 - 9750</i>
-
-                    <a href="https://web.facebook.com/profile.php?id=100085932051209" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
-    
-                    <a href="https://www.instagram.com/dj.diner/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <h2>Location</h2>
-                <div class="inner-form">
-                    <p>P-3, Jose Panganiban, Camarines Norte</p>
-                </div>
-                </div>
-                <div class="form-right">
                 <label for="text">Your Name</label>
-                <input type="text" class="input-box" required />
+                <input type="text" id="text" class="input-box" required />
                 <label for="email">Your Email</label>
-                <input type="email" class="input-box" required />
+                <input type="email" id="email" class="input-box" required />
                 <label for="number">Contact number</label>
-                <input type="number" class="input-box" required />
+                <input type="number" id="number" class="input-box" required />
                 <label for="date">Date</label>
-                <input type="date" class="input-box" required />
+                <input type="date" id="date" class="input-box" required />
                 <label for="time">Time</label>
-                <input type="time" class="input-box" required />
+                <input type="time" id="time" class="input-box" required />
                 <label for="people">How Many People</label>
                 <select class="input-box" name="select" id="people">
                     <option value="1">1 person</option>
@@ -73,6 +53,7 @@
                     <option value="19">19 persons</option>
                     <option value="20">20 persons</option>
                 </select>
+                    <div class="form-right">
                 <label for="table">Select Table</label>
                 <select class="input-box" name="select" id="table">
                     <option value="1">table 1 </option>
@@ -81,10 +62,7 @@
                     <option value="4">table 4 </option>
                     <option value="5">Family Table</option>
                 </select>
-                <label class="paymentmethod" for="paymentmethod">Choose a payment Method</label>
-                <div class="input-box1"><i class="fa-brands fa-paypal"></i>
-                <img src="../images/logo/Gcash.jpg" alt="">
-                <p>Choose Other <br> Option</p>
+            </div>
             </div>
             </div>
                 
@@ -95,16 +73,12 @@
             <button class="submit-btn" onclick="alert('Thank Your For Your Order!'), location.href='/users/dashboard'" >Reserve Now</button>
         </div>
         </container>
-    </container>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
+    <!-- ANIMATION ON SCROLL JAVASCRIPT -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    AOS.init();
-    </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+        AOS.init();
+    </script> 
         <script>
             function checker() {
                 var result = confirm('Are you sure?');
