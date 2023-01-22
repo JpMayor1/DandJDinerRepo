@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="../css/fillupform.css">
 </head>
 <body>
-        <container class="form">
+        <section class="form">
             <!-------------------------------------FORM---------------------------->
             <h2>Reservation</h2>
-            <main-form class="main-form">
+            <div class="wrapper1">
                 <div class="form-left">
+                <div class="left-wrapper">
                 <label for="text">Your Name</label>
                 <input type="text" id="text" class="input-box" required />
                 <label for="email">Your Email</label>
@@ -53,7 +54,41 @@
                     <option value="19">19 persons</option>
                     <option value="20">20 persons</option>
                 </select>
-                    <div class="form-right">
+                </div>
+            </div>
+            <div class="form-right">
+                
+            <div class="right-wrapper">
+            <div class="up-container">
+                <div class="image-container">
+                    <img src="../images/Tables/2.jpg" alt="">
+                </div>
+                <h1 class="image-text">Table 1 : Good for 2 Persons</h1>
+            </div>
+            <div class="down-container">
+                <div class="card">
+                <img class="images dis" src="../images/Tables/1.jpg" alt="">
+                <h1>Table 1 : Good for 2 Persons</h1>
+                </div>
+                <div class="card">
+                    <img class="images dis" src="../images/Tables/2.jpg" alt="">
+                    <h1>Table 2 : Good for 2 Persons</h1>
+                </div>
+                <div class="card">
+                    <img class="images dis" src="../images/Tables/3.jpg" alt="">
+                    <h1>Table 3 : Good for 3-4 Persons</h1>
+                </div>
+                <div class="card">
+                    <img class="images dis" src="../images/Tables/4.jpg" alt="">
+                    <h1>Table 4 : Good for 5-6 Persons</h1>
+                </div>
+                <div class="card">
+                    <img class="images dis" src="../images/Tables/5.jpg" alt="">
+                    <h1>Table 5 : Family table</h1>
+                </div>
+            </div>
+            </div>
+            <div class="form-right-request">
                 <label for="table">Select Table</label>
                 <select class="input-box" name="select" id="table">
                     <option value="1">table 1 </option>
@@ -62,17 +97,17 @@
                     <option value="4">table 4 </option>
                     <option value="5">Family Table</option>
                 </select>
+            <label for="request">Special Request</label>
+            <textarea class="input-box" name="request" id="request" cols="40" rows="3"></textarea>
             </div>
             </div>
-            </div>
-                
-            </main-form>
-            <div class="wrapper">
+        </div>   
+        <div class="wrapper">
             <a class="cancel-btn" onclick="checker()" href="/users/reservation">Cancel Reservation</a>
 
             <button class="submit-btn" onclick="alert('Thank Your For Your Order!'), location.href='/users/dashboard'" >Reserve Now</button>
         </div>
-        </container>
+    </section>
 <!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
     <!-- ANIMATION ON SCROLL JAVASCRIPT -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
