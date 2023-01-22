@@ -54,16 +54,21 @@
                     <option value="19">19 persons</option>
                     <option value="20">20 persons</option>
                 </select>
+                <label for="payment">Payment Method</label>
+                <div class="payment-cards" id="payment">
+                    <img src="../images/logo/gcash.jpg" alt="" class="paymentimg">
+                    <img src="../images/logo/paypal.jpg" alt="" class="paymentimg">
+                    <i class='bx bxs-credit-card-front altcard'>Other</i>
+                </div>
                 </div>
             </div>
-            <div class="form-right">
-                
+            <div class="form-right">    
             <div class="right-wrapper">
             <div class="up-container">
                 <div class="image-container">
-                    <img src="../images/Tables/2.jpg" alt="">
+                    <img src="../images/Tables/1.jpg" alt="" id="poster">
                 </div>
-                <h1 class="image-text">Table 1 : Good for 2 Persons</h1>
+                <h1 class="image-text" id="title">Table 1 : Good for 2 Persons</h1>
             </div>
             <div class="down-container">
                 <div class="card">
@@ -87,15 +92,19 @@
                     <h1>Table 5 : Family table</h1>
                 </div>
             </div>
+            <div class="btns">
+                <i class='bx bxs-left-arrow'></i>
+                <i class='bx bxs-right-arrow' ></i>
+            </div>
             </div>
             <div class="form-right-request">
                 <label for="table">Select Table</label>
-                <select class="input-box" name="select" id="table">
-                    <option value="1">table 1 </option>
-                    <option value="2">table 2 </option>
-                    <option value="3">table 3 </option>
-                    <option value="4">table 4 </option>
-                    <option value="5">Family Table</option>
+                <select class="input-box option" name="select" id="table">
+                    <option value="1" >table 1 </option>
+                    <option value="2" >table 2 </option>
+                    <option value="3" >table 3 </option>
+                    <option value="4" >table 4 </option>
+                    <option value="5" >Family Table</option>
                 </select>
             <label for="request">Special Request</label>
             <textarea class="input-box" name="request" id="request" cols="40" rows="3"></textarea>
@@ -109,6 +118,8 @@
         </div>
     </section>
 <!-----------------------------------CUSTOM JS FILE LINK--------------------------------->
+     <!--  JAVASCRIPT link -->
+     <script src="/js/fillupform.js"></script>
     <!-- ANIMATION ON SCROLL JAVASCRIPT -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
