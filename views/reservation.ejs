@@ -16,15 +16,87 @@
         <link rel="stylesheet" href="../css/reservation.css" />
     </head>
     <body>
-        <back-button class="back">
-            <a href="dashboard" class="btn">Home</a>
-        </back-button>
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="../images/index/1.jpg" alt="" />
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">D and J</span>
+                        <span class="business">Diner</span>
+                    </div>
+                </div>
+                <i class="bx bx-chevron-right toggle"></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                            <li class="nav-link">
+                                <a href="#home">
+                                    <i class="bx bx-home icon"></i>
+                                    <span class="text nav-text">Home</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-link">
+                                <a href="#chicken-wings">
+                                    <img class="icon" src="../images/Chicken-Wings/BUFFALOWINGS.jpg" alt="">
+                                    <span class="text nav-text">Chicken-Wings</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#silog">
+                                    <img class="icon" src="../images/SilogMeals/CHICKSILOG.jpg" alt="">
+                                    <span class="text nav-text">Silog Meals</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#noodles">
+                                    <img class="icon" src="../images/Noodles&Pasta/SPAGHETTI2.jpg" alt="">
+                                    <span class="text nav-text">Noodles & Pasta</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#platters">
+                                    <img class="icon" src="../images/Platters/LUMPIANG SHANGHAI.jpg" alt="">
+                                    <span class="text nav-text">Platters</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#snacks">
+                                    <img class="icon" src="../images/Snacks/quezzomozzaclassic.jpg" alt="">
+                                    <span class="text nav-text">Snacks</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#milktea">
+                                    <img class="icon" src="../images/Drinks/OKINAWA.jpg" alt="">
+                                    <span class="text nav-text">Milktea</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#frappe">
+                                    <img class="icon" src="../images/Drinks/MANGO GRAHAM.jpg" alt="">
+                                    <span class="text nav-text">Frappe</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#cart">
+                                    <i class='bx bx-cart icon'></i>
+                                    <span class="text nav-text">Cart</span>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-------------------------------------- added codes -->
         
         <section class="container content-section">
             <!----------------------------------------- MENU SECTION -->
             <h2 class="section-header">CHOOSE A MENU</h2>
-            <h3 class="header-tree">Chicken Wings</h3>
+            <h3 class="header-tree" id="chicken-wings">Chicken Wings</h3>
             <div class="shop-items">
                 <div class="shop-item">
                     <div class="image">
@@ -82,7 +154,7 @@
                 </div>
             </div>
             <!-----------------------------------SILOG MEALS--------------------------------->
-            <h3 class="header-tree">Silog Meals</h3>
+            <h3 class="header-tree" id="silog">Silog Meals</h3>
             <div class="shop-items">
                 <div class="shop-item" >
                     <div class="image">
@@ -266,7 +338,7 @@
                 </div>
             </div>
             <!-----------------------------------NOODLES AND PASTA--------------------------------->
-            <h3 class="header-tree">Noodles And Pasta</h3>
+            <h3 class="header-tree" id="noodles">Noodles And Pasta</h3>
             <div class="shop-items">
                 <div class="shop-item" >
                     <div class="image">
@@ -325,7 +397,7 @@
             </div>
 
             <!-----------------------------------PLATTERS--------------------------------->
-            <h3 class="header-tree">Platters</h3>
+            <h3 class="header-tree" id="platters">Platters</h3>
             <div class="shop-items">
                 <div class="shop-item" >
                     <div class="image">
@@ -420,7 +492,7 @@
             </div>
 
             <!-----------------------------------SNACKS--------------------------------->
-            <h3 class="header-tree">SNACKS</h3>
+            <h3 class="header-tree" id="snacks">SNACKS</h3>
             <div class="shop-items">
                 <div class="shop-item" >
                     <div class="image">
@@ -551,7 +623,7 @@
             </div>
             <!-----------------------------------DRINKS--------------------------------->
             <h2 class="section-header">DRINKS</h2>
-            <h3 class="header-tree">MILKTEA</h3>
+            <h3 class="header-tree" id="milktea">MILKTEA</h3>
             <div class="shop-items">
                 <div class="shop-item" >
                     <div class="image">
@@ -597,7 +669,7 @@
                     />
                     </div>
                     <div class="shop-item-details">
-                        <span class="shop-item-title">Okinaw</span>
+                        <span class="shop-item-title">Okinawa</span>
                         <div class="price-btn">
                             <span class="shop-item-price">₱39</span>
                         <button
@@ -735,7 +807,7 @@
                 </div>
             </div>
             <!-------------------------------- FRAPPE -->
-            <h3 class="header-tree">FRAPPE</h3>
+            <h3 class="header-tree" id="frappe">FRAPPE</h3>
             <div class="shop-items">
                 <div class="shop-item" >
                     <div class="image">
@@ -867,7 +939,7 @@
         </section>
         <!----------------------------------- CART SECTION -->
         <section class="container content-section">
-            <h2 class="section-header">CART</h2>
+            <h2 class="section-header" id="cart">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>

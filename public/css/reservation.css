@@ -25,51 +25,139 @@
 }
 
 body {
+    height: 100%;
+    width: calc(100% - 88px);
     margin: 0;
-    padding: 2rem 4rem;
-    padding-bottom: 0;
+    padding: 5rem 0 0 90px;
     background-color: var(--body-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.back .btn{
-    display: inline-block;
+.sidebar .text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--trans-04);
+    white-space: nowrap;
+    opacity: 1;
+    margin-left: 10px;
+}
+.sidebar .image {
+    min-width: 60px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar {
     position: fixed;
-    left: .3rem;
-    top: 1rem;
-    text-decoration: none;
-    color: black;
-    background: var(--sidebar-color);
-    padding: .2rem .5rem;
-    border: none;
-    border-radius: 5px;
-    transition: 1s linear;
-    font-size: 17px;
-    font-weight: 300;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 1;
-}
-.back .btn::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: var(--text-color);
-    position: absolute;
     top: 0;
-    left: -100%;
-    transition: .5s;
-    z-index: -999999;
-}
-.back .btn:hover {
-    color: var(--sidebar-color);
-    transition: .5s;
-}
-.back .btn:hover.btn::before {
     left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--trans-05);
+    z-index: 100;
 }
+.sidebar.close {
+    width: 88px;
+}
+.sidebar.close .text{
+    opacity: 0;
+}
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar li .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    font-size: 30px;
+    height: auto;
+    border-radius: 50%;
+}
+.sidebar li .icon,
+.sidebar li .text {
+    color: var(--text-color);
+    transition: var(--trans-02);
+}
+.sidebar .image-text img {
+    width: 40px;
+    border-radius: 50%;
+}
+.sidebar header {
+    position: relative;
+}
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+    padding-right: 45px;
+}
+header .image-text .header-text {
+    cursor: default;
+}
+.sidebar header .toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    height: 25px;
+    width: 25px;
+    transform: translateY(-50%) rotate(180deg);
+    background: var(--body-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 22px;
+    transition: var(--trans-03);
+}
+.sidebar.close header .toggle {
+    transform: translateY(-50%);
+}
+.sidebar .menu {
+    margin-top: 0;
+}
+.sidebar li a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: var(--trans-04);
+    border-radius: 5px;
+}
+.sidebar li a:hover, .sidebar li a:focus {
+    background: var(--primary-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--text-color);
+}
+.sidebar .menu-bar {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bottom-content {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
 
 /************************************** added codes */
 
@@ -92,12 +180,13 @@ body {
     color: var(--text-color);
     text-align: center;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 500;
     cursor: default;
+    padding-top: 6rem;
 }
 
 .shop-items {
-    background: var(--sidebar-color);
+    background: var(--text-color);
     margin: 1rem;
     display: flex;
     justify-content: center;
@@ -115,7 +204,7 @@ body {
     width: 30%;
     height: 350px;
     padding: 1em;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--body-color-light);
     border-radius: 10px;
     background: var(--toggle-color);
 }

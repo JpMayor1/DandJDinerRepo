@@ -111,3 +111,12 @@ function updateCartTotal() {
     document.getElementsByClassName("cart-total-price")[0].innerText =
         "₱" + total;
 }
+
+
+///////////////////////////////// TOGGLE
+const toggle = document.querySelector(".toggle");
+const sidebar = document.querySelector(".sidebar");
+
+toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+});
