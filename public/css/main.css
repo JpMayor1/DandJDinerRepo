@@ -204,11 +204,10 @@ header .image-text .header-text {
     cursor: default;
 }
 .home .up-container .image-text .btn {
-    display: inline-block;
     text-decoration: none;
     color: black;
     background: transparent;
-    padding: .2rem 1rem;
+    padding: 1rem 1rem;
     border: 1px solid black;
     border-radius: 5px;
     transition: 1s linear;
@@ -218,6 +217,9 @@ header .image-text .header-text {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home .up-container .image-text .btn::before {
     content: '';
@@ -314,7 +316,6 @@ header .image-text .header-text {
     background: transparent;
     padding: 15px 20px 0 20px;
     transition: var(--trans-05);
-    margin-bottom: 7rem;
 }
 .heading {
     text-align: center;
@@ -349,7 +350,7 @@ header .image-text .header-text {
 }
 .welcome .box-container .box .image {
     width: 100%;
-    height: 50%;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
@@ -368,34 +369,42 @@ header .image-text .header-text {
 }
 .welcome .box-container .box .content h3 {
     color: var(--body-color-light);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     cursor: default;
 }
-.welcome .box-container .box .content p {
+.cutoff-text {
+    --max-lines: 2;
+    --line-height: 1.4;
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+    overflow: hidden;
+    position: relative;
     color: var(--primary-color);
     font-size: 1rem;
     font-weight: 200;
     padding: .5rem 0;
-    line-height: 1.5;
     cursor: default;
 }
-.welcome .box-container .box .content .btn {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--body-color-light);
-    background: transparent;
-    padding: .2rem 1rem;
-    border-radius: 5px;
-    transition: 1s linear;
-    font-size: 18px;
-    font-weight: 300;
-    cursor: pointer;
+.welcome .box-container .box .btn {
+    margin-top: 1rem;
     position: relative;
+    appearance: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: .5em;
+    cursor: pointer;
     overflow: hidden;
-    z-index: 1;
+    color: var(--sidebar-color);
+    border-radius: 8px;
+    transition: .5s;
 }
-.welcome .box-container .box .content .btn::before {
+.welcome .box-container .box .btn::before {
+    content: "Read More";
+}
+.welcome .box-container .box .btn:checked::before {
+    content: "Collapse";
+}
+.welcome .box-container .box .btn::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -406,12 +415,15 @@ header .image-text .header-text {
     transition: .5s;
     z-index: -999999;
 }
-.welcome .box-container .box .content .btn:hover {
+.welcome .box-container .box .btn:hover {
     color: var(--text-color);
     transition: .5s;
 }
-.welcome .box-container .box .content .btn:hover.btn::before {
+.welcome .box-container .box .btn:hover.btn::after {
     left: 0;
+}
+.cutoff-text:has(+ .btn:checked){
+    max-height: none;
 }
 /********************************************* CONTACT PAGE */
 .contact {
@@ -425,11 +437,12 @@ header .image-text .header-text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 320px;
 }
 .contact .contacts {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 100%;
     margin: .5rem;
 }
 .contact .contacts p {
@@ -449,7 +462,7 @@ header .image-text .header-text {
 /********************************************* MEDIA QUERIES */
 
 @media(max-width: 1000px) {
-    /* .home .up-container .image-container img {
+    .home .up-container .image-container img {
         height: 170px;
     }
     .home .up-container .image-container {
@@ -468,6 +481,45 @@ header .image-text .header-text {
         height: 50%;
     }
     .contact {
-        top: 94px;
-    } */
+        top: 170px;
+    }
+}
+
+@media(max-width: 800px) {
+    .home .up-container .image-container img {
+        height: 110px;
+    }
+    .home .up-container .image-text {
+        width: 228px;
+    }
+    .home .up-container .image-text h1 {
+        font-size: 25px;
+    }
+    .home .up-container .image-text h3 {
+        font-size: 25px;
+    }
+    .home .up-container .image-container {
+        width: 49px;
+    }
+    .contact {
+        top: 230px;
+    }
+    .welcome .box-container .box .content .btn {
+        font-size: 14px;
+    }
+    .welcome .box-container .box .content p {
+        font-size: 13px;
+    }
+    .contact .contacts p {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 735px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+    .sub-heading {
+        font-size: 1rem;
+    }
 }
