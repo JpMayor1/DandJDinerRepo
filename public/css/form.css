@@ -1,3 +1,13 @@
+:root {
+    /* COLORS */
+    --body-color: #E4E9F7;
+    --sidebar-color: #D5CEA3;
+    --primary-color: #d6d6d6;
+    --body-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #353434;
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -16,20 +26,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(126, 116, 103);
+    background: var(--body-color);
+    /* background-color: rgb(126, 116, 103);
     background-image: url(../d&j/mainbackground2.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: 50% 40%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     font-family: "roboto", sans-serif;
 }
 
 .form {
     width: 400px;
     height: auto;
-    color: #fff;
     font-family: "roboto", sans-serif;
+    background: rgb(194, 194, 194);
+    backdrop-filter: blur(10rem);
+    border-radius: 10px;
+    padding-top: 2rem;
+}
+
+ul {
+    margin-left: 30px;
 }
 
 .heading {
@@ -38,7 +56,8 @@ body {
     font-size: 80px;
     font-weight: 300;
     margin-bottom: 50px;
-    color: #fff;
+    color: var(--text-color);
+    cursor: default;
 }
 
 input,
@@ -49,25 +68,25 @@ input,
     display: block;
     margin: 20px auto;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(29, 29, 29, 0.3);
     border: none;
-    color: #fff;
+    color: var(--text-color);
     padding: 15px;
     transition: 0.5s;
 }
 
 input::placeholder {
-    color: #fff;
+    color: var(--text-color);
 }
 
 input:focus,
 .submit-btn:hover {
-    background: #fff;
-    color: #000;
+    background: var(--text-color);
+    color: var(--body-color-light);
 }
 
 input:focus::placeholder {
-    color: #000;
+    color: var(--primary-color);
 }
 
 .submit-btn {
@@ -81,11 +100,12 @@ input:focus::placeholder {
 .link {
     opacity: 1;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--text-color);
     display: block;
     margin: 30px auto;
+    text-decoration: none;
 }
 
 .link:hover {
-    color: #fff;
+    color: black;
 }

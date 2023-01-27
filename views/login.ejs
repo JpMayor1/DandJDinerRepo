@@ -5,11 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <!-- ANIMATION ON SCROLL LINK -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- css link -->
         <link rel="stylesheet" href="/css/form.css" />
     </head>
     <body>
-        <div class="form">
+        <div class="form" data-aos="flip-left" data-aos-duration="2000">
             <h1 class="heading">Login</h1>
             <ul>
                 <% if(messages.succes_msg) { %>
@@ -50,5 +52,10 @@
                 <a href="register" class="link">Don't have an Account? Register here</a>
             </form>
         </div>
+         <!-- ANIMATION ON SCROLL JAVASCRIPT -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <script>
+             AOS.init();
+         </script>
     </body>
 </html>
